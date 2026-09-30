@@ -1,5 +1,5 @@
 # Practise_GSE327890
-Here, you can find me, Lina, practising running the [nf-core/rnaseq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327890) pipeline on the open-source available GEO dataset with the accession number GSE327890. 
+Here, you can find me, Lina, practising running the [nf-core/rnaseq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327890) pipeline on the open-source available GEO dataset with the accession number: [GSE327890](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327890). 
 
 Here comes some information about the dataset:
 
