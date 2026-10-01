@@ -1,0 +1,36 @@
+{
+  "name": "nf-core/rnaseq with Pixi",
+  
+  // 1. Use the official pre-made nf-core development image
+  "image": "docker.io/nfcore/devcontainer:latest", 
+
+  "features": {
+    // 2. Enable Docker orchestration so Nextflow can spin up the pipeline's tools
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+
+  // 3. Install Pixi and download the pipeline when the container builds
+  "postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && export PATH=\"$HOME/.pixi/bin:$PATH\" && pixi install && nextflow pull nf-core/rnaseq",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "nextflow.nextflow",
+        "ms-azuretools.vscode-docker",
+        "prefix-dev.pixi-vscode" // Official Pixi extension for VS Code
+      ],
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "args": ["-l"]
+          }
+        }
+      }
+    }
+  },
+
+  "remoteUser": "vscode"
+}

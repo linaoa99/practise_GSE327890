@@ -15,6 +15,6 @@ Here comes some information about the dataset:
 
 **Overall design:**	Human synovial tissue samples were obtained from patients with OA, RA, ACLR, and MT undergoing surgery or biopsy at the University of Tokyo Hospital with informed consent and institutional ethics approval. Total RNA was extracted from synovial tissues, and bulk RNA sequencing libraries were prepared using the NEBNext Ultra II RNA Library Prep Kit for Illumina and sequenced on an Illumina NovaSeq 6000 platform. Raw reads were quality-controlled using fastp, aligned to the GRCh38 reference genome using STAR, and gene expression levels were quantified with RSEM.
 
-
+### 
 
 

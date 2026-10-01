@@ -1,0 +1,10 @@
+[project]
+name = "nf-core-rnaseq-practice"
+version = "0.1.0"
+description = "Practising nf-core/rnaseq using Pixi and DevContainers"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[dependencies]
+# Pixi handles local environments seamlessly. You can add extra helper tools here if needed.
+python = ">=3.11"
