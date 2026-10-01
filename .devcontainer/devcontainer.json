@@ -1,25 +1,36 @@
 {
   "name": "nf-core/rnaseq with Pixi",
-  "image": "nfcore/devcontainer:latest",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  // Mount the project at the SAME path it has in WSL, so the host Docker
+  // daemon (used by Nextflow) can see the same files. Open the project from WSL.
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
+  "workspaceFolder": "${localWorkspaceFolder}",
 
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:4.1.2": {}
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
   },
+
+  "remoteUser": "vscode",
 
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/.pixi/bin"
   },
 
-  // Only add `pixi install` once a pixi.toml exists in the project root
-  "postCreateCommand": "command -v pixi >/dev/null || curl -fsSL https://pixi.sh/install.sh | bash; nextflow pull nf-core/rnaseq",
+  // Runs once, when the container is created
+  "postCreateCommand": "command -v pixi >/dev/null || curl -fsSL https://pixi.sh/install.sh | bash; if [ -f pixi.toml ]; then /home/vscode/.pixi/bin/pixi install; fi",
 
   "customizations": {
     "vscode": {
       "extensions": [
         "nextflow.nextflow",
+        "ms-python.python",
         "ms-azuretools.vscode-docker"
-        // add the Pixi extension ID you confirmed here
-      ]
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.pixi/envs/default/bin/python",
+        "python.terminal.activateEnvironment": false
+      }
     }
   }
 }

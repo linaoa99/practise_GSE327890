@@ -1,0 +1,10 @@
+salmon (rust port, alignment mode) v2.7.0
+start: Thu Oct  1 09:58:31 2026
+end:   Thu Oct  1 09:58:32 2026
+library type: ISR
+mapping type: alignment
+aligned fragments: 38286
+strand-compatible (quantified): 38000
+compatible rate: 99.2530%
+number of equivalence classes: 95
+fragment length mean (sd): 168.69 (66.89)
