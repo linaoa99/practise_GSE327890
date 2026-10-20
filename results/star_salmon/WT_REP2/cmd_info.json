@@ -1,8 +1,0 @@
-{
-  "salmon_version": "2.7.0",
-  "alignments": "WT_REP2.Aligned.toTranscriptome.out.bam",
-  "targets": "transcriptome.fasta",
-  "libType": "ISR",
-  "output": "WT_REP2",
-  "auxDir": "aux_info"
-}

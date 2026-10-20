@@ -1,3 +1,4 @@
 .nextflow-home/
 work/
 .nextflow.log*
+results/test/
