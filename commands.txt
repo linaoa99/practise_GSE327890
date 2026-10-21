@@ -1,0 +1,14 @@
+# Download the GEO data:
+
+pixi run nextflow run nf-core/fetchngs -profile docker \
+    --input ids.csv \
+    --nf_core_pipeline rnaseq \
+    --outdir data
+
+
+# Run RNAseq on GEO data:
+
+pixi run nextflow run nf-core/rnaseq -profile docker \
+       --input data/samplesheet/samplesheet.csv \
+       --genome <genome> \
+       --outdir results

@@ -2,3 +2,6 @@
 work/
 .nextflow.log*
 results/test/
+data/
+.nextflow/*
+.nextflow/history
