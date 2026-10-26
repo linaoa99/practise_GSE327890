@@ -10,5 +10,5 @@ pixi run nextflow run nf-core/fetchngs -profile docker \
 
 pixi run nextflow run nf-core/rnaseq -profile docker \
        --input data/samplesheet/samplesheet.csv \
-       --genome <genome> \
+       --genome GRCh37 \
        --outdir results

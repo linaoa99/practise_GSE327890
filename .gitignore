@@ -5,3 +5,4 @@ results/test/
 data/
 .nextflow/*
 .nextflow/history
+results/

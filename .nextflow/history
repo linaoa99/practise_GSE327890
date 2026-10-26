@@ -2,3 +2,7 @@
 2026-10-01 12:41:48	59.5s	chaotic_planck	ERR	a1fcdddd3b826fe46eb46f0479f2ff8a7815af05	6af95623-2c99-473c-bf2f-afb3047673ed	nextflow run nf-core/rnaseq -profile test,docker --outdir results -resume
 2026-10-01 12:48:01	4m 40s	elated_angela	OK	a1fcdddd3b826fe46eb46f0479f2ff8a7815af05	6af95623-2c99-473c-bf2f-afb3047673ed	nextflow run nf-core/rnaseq -profile test,docker --outdir results -resume
 2026-10-20 07:58:19	1m 5s	sad_borg	OK	a1fcdddd3b826fe46eb46f0479f2ff8a7815af05	6af95623-2c99-473c-bf2f-afb3047673ed	nextflow run nf-core/rnaseq -profile test,docker --outdir results -resume
+2026-10-26 10:02:33	2h 34s	loving_khorana	ERR	68fb67398f9b00951b4a57b662226dc991f3619e	e02d79af-a2ed-40e2-9a00-22d0577ce2b3	nextflow run nf-core/fetchngs -profile docker --input ids.csv --nf_core_pipeline rnaseq --outdir data
+2026-10-26 12:10:15	-	scruffy_davinci	-	68fb67398f9b00951b4a57b662226dc991f3619e	1769f408-5cfd-4ce9-9ef4-0e9ac967779f	nextflow run nf-core/fetchngs -profile docker --input ids.csv --nf_core_pipeline rnaseq --outdir data
+2026-10-26 12:13:43	46m 32s	grave_linnaeus	OK	68fb67398f9b00951b4a57b662226dc991f3619e	67a0561d-8e5c-4970-9d1e-74cd06ce084b	nextflow run nf-core/fetchngs -profile docker --input ids.csv --nf_core_pipeline rnaseq --outdir data
+2026-10-26 14:14:32	13m 26s	big_monod	ERR	a1fcdddd3b826fe46eb46f0479f2ff8a7815af05	9b25c90b-be24-4edd-9b72-d741e698ac50	nextflow run nf-core/rnaseq -profile docker --input data/samplesheet/samplesheet.csv --genome GRCh37 --outdir results
